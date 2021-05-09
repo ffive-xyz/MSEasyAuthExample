@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace dotnetAsp.Controllers
 {
-    [Authorize]
+    [Authorize(AuthenticationSchemes = "EasyAuth")]
     public abstract class EasyAuthControllerBase : ControllerBase
     {
         public record AuthDetails(string Username, string Email, string Name);
