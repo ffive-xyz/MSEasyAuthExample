@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EasyAuthExample</title>
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -14,13 +14,24 @@
         <h1>EasyAuth Example</h1>
     </div>
     <div class="content">
-        <div class="login">
+        <div class="loggedOut login">
             <a href="/.auth/login/aad?post_login_redirect_uri=/">
                 <img src="https://docs.microsoft.com/en-us/azure/active-directory/develop/media/howto-add-branding-in-azure-ad-apps/ms-symbollockup_signin_light.svg"
                     alt="Sign in with Microsoft">
             </a>
         </div>
+        <div class="loggedIn logout">
+            <a href="/.auth/logout?post_logout_redirect_uri=/">
+                Logout
+            </a>
+        </div>
+        <div class="loggedIn details">
+            Hello <span id="name">Name</span> !!
+            <br>
+            Your email id is <span id="email">email</span>
+        </div>
     </div>
+    <script src="script.js"></script>
 </body>
 
 </html>
