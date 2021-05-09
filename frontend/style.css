@@ -31,8 +31,15 @@ a:hover {
   font-weight: bolder;
 }
 
-.nav {
-  background-color: rgb(81, 184, 243);
+body {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+.nav,
+.footer {
+  background-color: rgb(127, 154, 226);
   padding: 1em;
 }
 .nav h1 {
@@ -43,4 +50,18 @@ a:hover {
   padding: 1em;
   display: grid;
   grid-template-columns: 1fr 1fr;
+}
+.footer a{
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.footer a img{
+  height: 50px;
+  width: 50px;
+  padding-left: 10px;
 }
